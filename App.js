@@ -5,9 +5,8 @@
  * @format
  * @flow
  */
-
- import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View, ImageBackground, Button} from 'react-native';
  const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -19,11 +18,12 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Juan es gei con i!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+        <ImageBackground source={require('./img/otromicro2.jpg')} style={styles.container}>
+          <Text style={styles.welcome}>a</Text>
+          <Text style={styles.instructions}>To get started, edit App.js</Text>
+          <Text style={styles.instructions}>{instructions}</Text>
+          <Button style={styles.button} title='Conoce más' color='#800080' onPress={()=>alert('Soy un gay')}/>
+        </ImageBackground>
     );
   }
 }
@@ -33,16 +33,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 35,
     textAlign: 'center',
     margin: 10,
+    color: 'white',
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
   },
+  button: {
+    textAlign:'center',
+    padding:20,
+  }
 });

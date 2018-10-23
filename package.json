@@ -8,15 +8,17 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0-beta.44",
+    "@babel/runtime": "^7.1.2",
     "react": "^16.6.0-alpha.8af6728",
-    "react-native": "0.57.3",
+    "react-native": "^0.57.1",
     "react-navigation": "^2.18.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.48.1",
-    "react-test-renderer": "16.6.0-alpha.8af6728"
+    "react-test-renderer": "16.6.0-alpha.8af6728",
+    "schedule": "^0.4.0"
   },
   "jest": {
     "preset": "react-native"
