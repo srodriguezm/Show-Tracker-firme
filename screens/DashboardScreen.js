@@ -14,11 +14,12 @@ class DashboardScreen extends Component{
             <View style = {styles.bottomContainer}>
 						<TouchableOpacity style={styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Home')} >
 							<Text style={styles.buttonText}>
-								Su madre es así no?
+								Logout
 							</Text>
 						</TouchableOpacity>
             </View>
             <View style = {styles.contentContainer}>
+						<Scroll>
 								<Card>
 												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
 												<Text>Baklash</Text>
@@ -36,24 +37,25 @@ class DashboardScreen extends Component{
 								<Card>
 												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
 												<Text>Baklash</Text>
-												<Image src = {"../img/RTN80.jpg"} />
+												<Image source = {require('../img/jazz2.jpg')} style={styles.imgJazz} />
 												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
 												<Text>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
 												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
 												<Text>Baklash</Text>
-												<Image src = {"../img/RTN80.jpg"} />
+												<Image source = {require('../img/sfx38079.jpg')} />
 												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
 												<Text>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
 												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
 												<Text>Baklash</Text>
-												<Image src = {"./images/RTN80.jpg"} />
+												<Image source = {require('../img/sfx38079.jpg')} />
 												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
 												<Text>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
+						</Scroll>
             </View>
       </View>
 		);
@@ -77,7 +79,7 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		textAlign: 'center',
 		color: 'white',
-		fontWeight:'bold',
+		fontFamily: Fonts.FjallaOne,
 		opacity:0.9,
 	},
 	contentContainer:{
@@ -94,4 +96,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: Fonts.MerriweatherSans,
   },
+	imgJazz:{
+		width: 300,
+    height: 150
+	}
 });
