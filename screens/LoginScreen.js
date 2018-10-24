@@ -45,11 +45,7 @@ class LoginScreen extends Component {
                 secureTextEntry
                 style={styles.input}
                   />
-                <TouchableOpacity activeOpacity={.5}>
-              <View>
-                <Text style={styles.forgotPasswordText} >Olvidaste tu contraseña?</Text>
-              </View>
-            </TouchableOpacity>
+
                   <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
                 <Text style= {styles.buttonText}LOGIN >LOGIN</Text>
                  </TouchableOpacity>
@@ -101,6 +97,7 @@ const styles = StyleSheet.create({
       signupLinkText: {
         color: "#FFF",
         marginLeft: 5,
+        fontSize:18
       },
     logo:{
         width:120,

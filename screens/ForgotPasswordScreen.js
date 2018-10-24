@@ -29,9 +29,7 @@ class ForgotPasswordScreen extends Component {
             <View style={styles.logoContainer} >
                 <Text style={styles.logoText}>Olvidaste tu contraseña?</Text>
             </View>
-            <Text style={styles.texto}>Ingresa tu correo electrónico
-                    y te enviaremos un link para recuperar la contraseña
-              </Text>
+            
 
             <View>
                    <TextInput

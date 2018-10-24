@@ -29,7 +29,7 @@ const AppStackNavigator = createStackNavigator({
   Login:LoginScreen,
   Dashboard:DashboardScreen,
   SignUp:SignUpScreen,
-  ForgotPassword:ForgotPasswordScreen
+  Forgot:ForgotPasswordScreen
 })
 
 const styles = StyleSheet.create({
