@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
     View,
     Text,
-    StyleSheet,
+    StyleSheet, 
     Button,
     ImageBackground,
     Image,
@@ -15,7 +15,7 @@ import wall from '../img/drum.jpg'
 import logo from '../img/logo.png'
 
 const {width:WIDTH}= Dimensions.get('window')
-class LoginScreen extends Component {
+class ForgotPasswordScreen extends Component {
 
     static navigationOptions={
         header:null
@@ -26,54 +26,37 @@ class LoginScreen extends Component {
             <ImageBackground source={wall} style={styles.backgroundContainer} >
 
             
-            <View style={styles.logoContainer}>
-                <Image source={logo} style={styles.logo} />
-                <Text style={styles.logoText}>SHOW TRACKER</Text>
+            <View style={styles.logoContainer} >
+                <Text style={styles.logoText}>Olvidaste tu contraseña?</Text>
             </View>
-           
+            <Text style={styles.texto}>Ingresa tu correo electrónico
+                    y te enviaremos un link para recuperar la contraseña
+              </Text>
+
             <View>
-                <TextInput
-                placeholder="    Usuario"
+                   <TextInput
+                placeholder="    Email"
                 placeholderTextColor="backgroundColor: 'rgba(255,255,255,0.9)"
                 style={styles.input}
                   />
-                  <TextInput
-                  style={styles.input}
-                  placeholder="   Contraseña"
-                placeholderTextColor="backgroundColor: 'rgba(255,255,255,0.9)"
-                returnKeyType="go"
-                secureTextEntry
-                style={styles.input}
                   />
                 <TouchableOpacity activeOpacity={.5}>
-              <View>
-                <Text style={styles.forgotPasswordText} >Olvidaste tu contraseña?</Text>
-              </View>
+              
             </TouchableOpacity>
-                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
-                <Text style= {styles.buttonText}LOGIN >LOGIN</Text>
+                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Home')}>
+                <Text style= {styles.buttonText} >Enviar</Text>
                  </TouchableOpacity>
             </View>
+            
             <View style={styles.containera}>
-            <View style={styles.signupWrap}>
-              <Text style={styles.accountText}>No tienes una cuenta?</Text>
-              <TouchableOpacity activeOpacity={.5}>
-                <View>
-                  <Text style={styles.signupLinkText} onPress={()=>this.props.navigation.navigate('SignUp')}>Registrate aquí!</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-            <View style={styles.containera}>
-                <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} />
+                <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
             </View>
             </ImageBackground>
             
         );
     }
-    
 }
-export default LoginScreen;
+export default ForgotPasswordScreen;
 
 const styles = StyleSheet.create({
     containera: {
@@ -132,7 +115,12 @@ const styles = StyleSheet.create({
         marginHorizontal: 25,
         marginTop:20
     },
-
+    texto: {
+        marginTop:60,
+        fontSize: 15,
+        textAlign: 'center',
+        color: 'white',
+      },
     buttonText:{
         fontSize: 30,
     textAlign: 'center',

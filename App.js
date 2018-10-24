@@ -12,6 +12,7 @@ import {createStackNavigator} from 'react-navigation';
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
+import ForgotPasswordScreen from './screens/ForgotPasswordScreen'
 import DashboardScreen from './screens/DashboardScreen'
 import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
@@ -27,7 +28,8 @@ const AppStackNavigator = createStackNavigator({
   Home:HomeScreen,
   Login:LoginScreen,
   Dashboard:DashboardScreen,
-  SignUp:SignUpScreen
+  SignUp:SignUpScreen,
+  ForgotPassword:ForgotPasswordScreen
 })
 
 const styles = StyleSheet.create({
