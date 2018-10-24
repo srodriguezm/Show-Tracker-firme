@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     textAlign: 'center',
     color: 'white',
-    fontWeight:'bold',
     opacity:0.9,
+    fontFamily: Fonts.FjallaOne,
   },
   texto: {
     marginTop:60,
