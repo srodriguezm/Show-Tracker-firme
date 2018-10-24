@@ -15,7 +15,7 @@ import wall from '../img/drum.jpg'
 import logo from '../img/logo.png'
 
 const {width:WIDTH}= Dimensions.get('window')
-class LoginScreen extends Component {
+class SignUpScreen extends Component {
 
     static navigationOptions={
         header:null
@@ -27,13 +27,17 @@ class LoginScreen extends Component {
 
             
             <View style={styles.logoContainer}>
-                <Image source={logo} style={styles.logo} />
-                <Text style={styles.logoText}>SHOW TRACKER</Text>
+                <Text style={styles.logoText}>Regístrate!</Text>
             </View>
            
             <View>
                 <TextInput
                 placeholder="    Usuario"
+                placeholderTextColor="backgroundColor: 'rgba(255,255,255,0.9)"
+                style={styles.input}
+                  />
+                   <TextInput
+                placeholder="    Email"
                 placeholderTextColor="backgroundColor: 'rgba(255,255,255,0.9)"
                 style={styles.input}
                   />
@@ -46,34 +50,22 @@ class LoginScreen extends Component {
                 style={styles.input}
                   />
                 <TouchableOpacity activeOpacity={.5}>
-              <View>
-                <Text style={styles.forgotPasswordText}>Olvidaste tu contraseña?</Text>
-              </View>
+              
             </TouchableOpacity>
-                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
-                <Text style= {styles.buttonText}LOGIN >LOGIN</Text>
+                  <TouchableOpacity style = {styles.buttonContainer}>
+                <Text style= {styles.buttonText} >Crear Cuenta</Text>
                  </TouchableOpacity>
             </View>
+            
             <View style={styles.containera}>
-            <View style={styles.signupWrap}>
-              <Text style={styles.accountText}>No tienes una cuenta?</Text>
-              <TouchableOpacity activeOpacity={.5}>
-                <View>
-                  <Text style={styles.signupLinkText} onPress={()=>this.props.navigation.navigate('SignUp')}>Registrate aquí!</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-            <View style={styles.containera}>
-                <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} />
+                <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
             </View>
             </ImageBackground>
             
         );
     }
-    
 }
-export default LoginScreen;
+export default SignUpScreen;
 
 const styles = StyleSheet.create({
     containera: {
