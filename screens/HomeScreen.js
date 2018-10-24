@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, ImageBackground, Button, TouchableOpacity} from 'react-native';
-
+import {Fonts} from '../src/util/Fonts';
 class HomeScreen extends Component {
   static navigationOptions = {
       header: null
@@ -10,8 +10,8 @@ class HomeScreen extends Component {
           <ImageBackground source={require('../img/otromicro2.jpg')} style={styles.container}>
             <View style={styles.contentContainer}>
               <Text style={styles.welcome}>DISFRUTA Y APOYA LA MÚSICA INDEPENDIENTE</Text>
-              <Text style={styles.texto}>¡Busca presentaciones de música en vivo!...
-                    ¡Consigue músicos para tu negocio!...
+              <Text style={styles.texto}>¡Busca presentaciones de música en vivo!...{"\n"}
+                    ¡Consigue músicos para tu negocio!...{"\n"}
                     ¡Encuentra donde tocar e impulsa tu música!...
               </Text>
             </View>
@@ -39,13 +39,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   welcome: {
-    marginTop:22,
-    fontWeight:'bold',
+    marginTop:150,
     fontSize: 30,
     textAlign: 'center',
     margin: 10,
     color: 'white',
-    opacity:0.9,
+    fontFamily: Fonts.FjallaOne,
   },
   bottomContainer: {
     padding: 20,
@@ -66,6 +65,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'white',
+    fontFamily: Fonts.MerriweatherSans,
   },
 
 });

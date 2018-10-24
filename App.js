@@ -12,6 +12,7 @@ import {createStackNavigator} from 'react-navigation';
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import DashboardScreen from './screens/DashboardScreen'
+import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
 
   render() {
