@@ -32,7 +32,6 @@ export default class Scroll extends React.Component{
 		const styles = StyleSheet.create({
 	  container: {
 	    flex: 1,
-	    backgroundColor: "#85D4E7",
 	  },
 	  scrollview: {
 	    flexGrow: 1,

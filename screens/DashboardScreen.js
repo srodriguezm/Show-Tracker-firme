@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, SafeAreaView, StatusBar, View, ScrollView, Button, Text, Image, Body, TouchableOpacity } from 'react-native';
+import { StyleSheet, SafeAreaView, StatusBar, View, ScrollView, Button, Text, Image, Body, TouchableOpacity, ImageBackground} from 'react-native';
 import {Card} from 'react-native-elements'
 import {Fonts} from '../src/util/Fonts';
 import Scroll from './Scroll';
@@ -10,7 +10,7 @@ class DashboardScreen extends Component{
   }
 	render(){
 		return (
-		<View style={styles.container}>
+		<ImageBackground source={require('../img/bar.jpg')} style={styles.container}>
             <View style = {styles.bottomContainer}>
 						<TouchableOpacity style={styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Home')} >
 							<Text style={styles.buttonText}>
@@ -21,43 +21,44 @@ class DashboardScreen extends Component{
             <View style = {styles.contentContainer}>
 						<Scroll>
 								<Card>
-												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
-												<Text>Baklash</Text>
-												<Image source = {require('./images/RTN80.jpg')} />
-												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text>Direccion: Calle 6# 71d-77 sur</Text>
+												<Text style={styles.texto}>Concierto de rock en Rock the night 80´s {"\n"}</Text>
+												<Text style={styles.texto}>Baklash</Text>
+												<Image source = {require('./images/RTN80.jpg')} style={styles.rock} />
+												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
+												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
-												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
-												<Text>Baklash</Text>
+												<Text style={styles.texto}>Concierto de rock en Rock the night 80´s {"\n"}</Text>
+												<Text style={styles.texto}>Baklash</Text>
 												<Image source = {require('../img/sfx38079.jpg')} />
-												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text>Direccion: Calle 6# 71d-77 sur</Text>
+												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
+												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
-												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
-												<Text>Baklash</Text>
+												<Text style={styles.texto}>Concierto de rock en Rock the night 80´s {"\n"}</Text>
+												<Text style={styles.texto}>Baklash</Text>
 												<Image source = {require('../img/jazz2.jpg')} style={styles.imgJazz} />
-												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text>Direccion: Calle 6# 71d-77 sur</Text>
+												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
+												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
-												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
-												<Text>Baklash</Text>
-												<Image source = {require('../img/sfx38079.jpg')} />
-												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text>Direccion: Calle 6# 71d-77 sur</Text>
+												<Text style={styles.texto}>Concierto de rock en Rock the night 80´s {"\n"}</Text>
+												<Text style={styles.texto}>Baklash</Text>
+												<Image source = {require('../img/concert.jpg')} style={styles.imgJazz} />
+												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
+												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
-												<Text>Concierto de rock en Rock the night 80´s {"\n"}</Text>
-												<Text>Baklash</Text>
-												<Image source = {require('../img/sfx38079.jpg')} />
-												<Text>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text>Direccion: Calle 6# 71d-77 sur</Text>
+												<Text style={styles.texto}>Salsaton en La aldea{"\n"}</Text>
+												<Text style={styles.texto}>Orquesta juvenil puntapié</Text>
+												<Image source = {require('../img/laldea.jpg')} style={styles.imgJazz} />
+												<Text style={styles.texto}>Domingo 28 de Octubre, 2018 {"\n"} 2 PM</Text>
+												<Text style={styles.texto}>Direccion: Calle 4# 16d-07</Text>
 								</Card>
 						</Scroll>
+
             </View>
-      </View>
+      </ImageBackground>
 		);
 
 	}
@@ -99,5 +100,14 @@ const styles = StyleSheet.create({
 	imgJazz:{
 		width: 300,
     height: 150
-	}
+	},
+	rock:{
+		width: 300,
+    height: 150
+	},
+	texto: {
+    fontSize: 15,
+    textAlign: 'center',
+    fontFamily: Fonts.MerriweatherSans,
+  },
 });
