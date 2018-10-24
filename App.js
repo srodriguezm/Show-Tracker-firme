@@ -11,6 +11,7 @@ import {Platform, StyleSheet, Text, View, ImageBackground, Button, TouchableOpac
 import {createStackNavigator} from 'react-navigation';
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
+import SignUpScreen from './screens/SignUpScreen'
 import DashboardScreen from './screens/DashboardScreen'
 import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
@@ -26,6 +27,7 @@ const AppStackNavigator = createStackNavigator({
   Home:HomeScreen,
   Login:LoginScreen,
   Dashboard:DashboardScreen,
+  SignUp:SignUpScreen
 })
 
 const styles = StyleSheet.create({
