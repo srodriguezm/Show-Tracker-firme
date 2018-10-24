@@ -14,6 +14,8 @@ import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
 import ForgotPasswordScreen from './screens/ForgotPasswordScreen'
 import DashboardScreen from './screens/DashboardScreen'
+import filtroRock from './screens/filtroRock'
+import filtroSalsa from './screens/filtroSalsa'
 import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
 
@@ -29,7 +31,9 @@ const AppStackNavigator = createStackNavigator({
   Login:LoginScreen,
   Dashboard:DashboardScreen,
   SignUp:SignUpScreen,
-  Forgot:ForgotPasswordScreen
+  Forgot:ForgotPasswordScreen,
+  Rock:filtroRock,
+  Salsa:filtroSalsa
 })
 
 const styles = StyleSheet.create({

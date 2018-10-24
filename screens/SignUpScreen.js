@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
     View,
     Text,
-    StyleSheet, 
+    StyleSheet,
     Button,
     ImageBackground,
     Image,
@@ -10,7 +10,7 @@ import {
     TextInput,
     TouchableOpacity
 } from "react-native";
-
+import {Fonts} from '../src/util/Fonts';
 import wall from '../img/drum.jpg'
 import logo from '../img/logo.png'
 
@@ -25,11 +25,11 @@ class SignUpScreen extends Component {
         return (
             <ImageBackground source={wall} style={styles.backgroundContainer} >
 
-            
+
             <View style={styles.logoContainer} >
                 <Text style={styles.logoText}>Regístrate!</Text>
             </View>
-           
+
             <View>
                 <TextInput
                 placeholder="    Usuario"
@@ -50,18 +50,18 @@ class SignUpScreen extends Component {
                 style={styles.input}
                   />
                 <TouchableOpacity activeOpacity={.5}>
-              
+
             </TouchableOpacity>
                   <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
                 <Text style= {styles.buttonText} >Crear Cuenta</Text>
                  </TouchableOpacity>
             </View>
-            
+
             <View style={styles.containera}>
                 <Button title="Volver" onPress={() => this.props.navigation.goBack()} />
             </View>
             </ImageBackground>
-            
+
         );
     }
 }
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         height:null,
         alignItems: 'center',
         justifyContent: 'center'
-        
+
     },
     signupWrap: {
         backgroundColor: "transparent",
@@ -104,8 +104,8 @@ const styles = StyleSheet.create({
     },
     logoText:{
         color:'white',
-        fontSize:35,
-        fontWeight:'500',
+        fontSize:55,
+        fontFamily: Fonts.FjallaOne,
         marginTop:50
     },
     forgotPasswordText: {
@@ -129,8 +129,9 @@ const styles = StyleSheet.create({
         fontSize: 30,
     textAlign: 'center',
     color: 'white',
-    fontWeight:'bold',
+    fontFamily: Fonts.FjallaOne,
     opacity:0.9,
+
     },
 
     buttonContainer: {

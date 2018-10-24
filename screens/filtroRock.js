@@ -1,10 +1,11 @@
+
 import React, {Component} from 'react';
 import { StyleSheet, SafeAreaView, StatusBar, View, ScrollView, Button, Text, Image, Body, TouchableOpacity, ImageBackground} from 'react-native';
 import {Card} from 'react-native-elements'
 import {Fonts} from '../src/util/Fonts';
 import Scroll from './Scroll';
 
-class DashboardScreen extends Component{
+class filtroRock extends Component{
 	static navigationOptions = {
       header: null
   }
@@ -24,8 +25,7 @@ class DashboardScreen extends Component{
 												<Text style={styles.texto}>Concierto de rock en Rock the night 80´s {"\n"}</Text>
 												<Text style={styles.texto}>Baklash</Text>
 												<Image source = {require('./images/RTN80.jpg')} style={styles.rock} />
-												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM
-												<Text style={{color: 'red'}}> AGOTADO</Text></Text>
+												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
 												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
 								<Card>
@@ -42,41 +42,22 @@ class DashboardScreen extends Component{
 												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
 												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
 								</Card>
-								<Card>
-												<Text style={styles.texto}>Lanzamiento de disco en La Roma Records</Text>
-												<Text style={styles.texto}>Vettel</Text>
-												<Image source = {require('../img/concert.jpg')} style={styles.imgJazz} />
-												<Text style={styles.texto}>Viernes 18 de Octubre, 2018 {"\n"} 8:00 PM</Text>
-												<Text style={styles.texto}>Direccion: Calle 6# 71d-77 sur</Text>
-								</Card>
-								<Card>
-												<Text style={styles.texto}>Salsaton en La aldea{"\n"}</Text>
-												<Text style={styles.texto}>Orquesta juvenil puntapié</Text>
-												<Image source = {require('../img/laldea.jpg')} style={styles.imgJazz} />
-												<Text style={styles.texto}>Domingo 28 de Octubre, 2018 {"\n"} 2 PM</Text>
-												<Text style={styles.texto}>Direccion: Calle 4# 16d-07</Text>
-								</Card>
+
 						</Scroll>
-						<Text style={styles.texto1}>Filtrar:</Text>
-							<View style = {styles.bottomContainer2}>
-							<TouchableOpacity style={styles.buttonContainer2} onPress={()=>this.props.navigation.navigate('Rock')} >
+							<View style = {styles.bottomContainer}>
+							<TouchableOpacity style={styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')} >
 								<Text style={styles.buttonText}>
-									Rock
+									Limpiar filtro
 								</Text>
 							</TouchableOpacity>
-							<TouchableOpacity style={styles.buttonContainer2} onPress={()=>this.props.navigation.navigate('Salsa')} >
-								<Text style={styles.buttonText}>
-									Salsa
-								</Text>
-							</TouchableOpacity>
-							</View>
+	            </View>
             </View>
       </ImageBackground>
 		);
 
 	}
 }
-export default DashboardScreen;
+export default filtroRock;
 const styles = StyleSheet.create({
 	container: {
     flex: 1,
@@ -104,7 +85,7 @@ const styles = StyleSheet.create({
 	cards: {
 		width: '100px',
 	},
-	texto1: {
+	texto: {
     fontSize: 15,
     textAlign: 'center',
     color: 'white',
@@ -123,13 +104,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: Fonts.MerriweatherSans,
   },
-	bottomContainer2: {
-		padding: 0,
-		flexDirection: 'row',
-	},
-	buttonContainer2: {
-		backgroundColor: '#800080',
-		padding: 10,
-		marginLeft:10,
-	},
 });

@@ -10,6 +10,7 @@ import {
     TextInput,
     TouchableOpacity
 } from "react-native";
+import {Fonts} from '../src/util/Fonts';
 
 import wall from '../img/drum.jpg'
 import logo from '../img/logo.png'
@@ -25,12 +26,12 @@ class LoginScreen extends Component {
         return (
             <ImageBackground source={wall} style={styles.backgroundContainer} >
 
-            
+
             <View style={styles.logoContainer}>
                 <Image source={logo} style={styles.logo} />
                 <Text style={styles.logoText}>SHOW TRACKER</Text>
             </View>
-           
+
             <View>
                 <TextInput
                 placeholder="    Usuario"
@@ -47,7 +48,7 @@ class LoginScreen extends Component {
                   />
 
                   <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
-                <Text style= {styles.buttonText}LOGIN >LOGIN</Text>
+                <Text style= {styles.buttonText} >LOGIN</Text>
                  </TouchableOpacity>
             </View>
             <View style={styles.containera}>
@@ -64,10 +65,10 @@ class LoginScreen extends Component {
                 <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} />
             </View>
             </ImageBackground>
-            
+
         );
     }
-    
+
 }
 export default LoginScreen;
 
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
         height:null,
         alignItems: 'center',
         justifyContent: 'center'
-        
+
     },
     signupWrap: {
         backgroundColor: "transparent",
@@ -92,12 +93,14 @@ const styles = StyleSheet.create({
         justifyContent: "center",
       },
       accountText: {
-        color: "#D8D8D8"
+        color: "#D8D8D8",
+        fontFamily: Fonts.MerriweatherSans,
       },
       signupLinkText: {
         color: "#FFF",
         marginLeft: 5,
-        fontSize:18
+        fontSize:18,
+        fontFamily: Fonts.MerriweatherSans,
       },
     logo:{
         width:120,
@@ -109,8 +112,8 @@ const styles = StyleSheet.create({
     },
     logoText:{
         color:'white',
-        fontSize:35,
-        fontWeight:'500',
+        fontSize:45,
+        fontFamily: Fonts.FjallaOne,
         marginTop:50
     },
     forgotPasswordText: {
@@ -131,10 +134,10 @@ const styles = StyleSheet.create({
     },
 
     buttonText:{
-        fontSize: 30,
+        fontSize: 37,
     textAlign: 'center',
     color: 'white',
-    fontWeight:'bold',
+    fontFamily: Fonts.FjallaOne,
     opacity:0.9,
     },
 
