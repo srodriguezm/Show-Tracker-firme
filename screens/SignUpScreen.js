@@ -26,7 +26,7 @@ class SignUpScreen extends Component {
             <ImageBackground source={wall} style={styles.backgroundContainer} >
 
             
-            <View style={styles.logoContainer}>
+            <View style={styles.logoContainer} >
                 <Text style={styles.logoText}>Regístrate!</Text>
             </View>
            
@@ -52,7 +52,7 @@ class SignUpScreen extends Component {
                 <TouchableOpacity activeOpacity={.5}>
               
             </TouchableOpacity>
-                  <TouchableOpacity style = {styles.buttonContainer}>
+                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
                 <Text style= {styles.buttonText} >Crear Cuenta</Text>
                  </TouchableOpacity>
             </View>
