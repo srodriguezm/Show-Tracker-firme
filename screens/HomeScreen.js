@@ -50,8 +50,9 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   buttonContainer: {
-    backgroundColor: '#800080',
+    backgroundColor: '#EA2027',
     paddingVertical: 15,
+    borderRadius:25,
   },
   buttonText: {
     fontSize: 30,

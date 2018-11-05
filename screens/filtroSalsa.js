@@ -20,13 +20,14 @@ class filtroSalsa extends Component{
             </View>
             <View style = {styles.contentContainer}>
 						<Scroll>
-								<Card>
-												<Text style={styles.texto}>Salsaton en La aldea{"\n"}</Text>
-												<Text style={styles.texto}>Orquesta juvenil puntapié</Text>
-												<Image source = {require('../img/laldea.jpg')} style={styles.imgJazz} />
-												<Text style={styles.texto}>Domingo 28 de Octubre, 2018 {"\n"} 2 PM</Text>
-												<Text style={styles.texto}>Direccion: Calle 4# 16d-07</Text>
-								</Card>
+						<Card>
+										<Text style={styles.texto}>Salsaton en La aldea{"\n"}</Text>
+										<Text style={styles.texto}>Orquesta juvenil puntapié</Text>
+										<Image source = {require('../img/laldea.jpg')} style={styles.imgJazz} />
+										<Text style={styles.texto}>Domingo 28 de Octubre, 2018 {"\n"} 2 PM
+										<Text style={{color: 'green'}}> LUGARES DISPONIBLES</Text></Text>
+										<Text style={styles.texto}>Direccion: Calle 4# 16d-07</Text>
+						</Card>
 						</Scroll>
 							<View style = {styles.bottomContainer}>
 							<TouchableOpacity style={styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')} >
@@ -51,8 +52,9 @@ const styles = StyleSheet.create({
 		padding: 20,
 	},
 	buttonContainer: {
-		backgroundColor: '#800080',
+		backgroundColor: '#EA2027',
 		paddingVertical: 15,
+		  borderRadius:15,
 	},
 	buttonText: {
 		fontSize: 30,
@@ -76,11 +78,11 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MerriweatherSans,
   },
 	imgJazz:{
-		width: 300,
+		width: 280,
     height: 150
 	},
 	rock:{
-		width: 300,
+		width: 280,
     height: 150
 	},
 	texto: {

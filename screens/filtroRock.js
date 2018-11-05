@@ -67,8 +67,9 @@ const styles = StyleSheet.create({
 		padding: 20,
 	},
 	buttonContainer: {
-		backgroundColor: '#800080',
+		backgroundColor: '#EA2027',
 		paddingVertical: 15,
+		borderRadius:15,
 	},
 	buttonText: {
 		fontSize: 30,
@@ -92,11 +93,11 @@ const styles = StyleSheet.create({
     fontFamily: Fonts.MerriweatherSans,
   },
 	imgJazz:{
-		width: 300,
+		width: 280,
     height: 150
 	},
 	rock:{
-		width: 300,
+		width: 280,
     height: 150
 	},
 	texto: {

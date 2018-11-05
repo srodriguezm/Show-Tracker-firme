@@ -135,9 +135,13 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        backgroundColor: '#800080',
+        backgroundColor: '#EA2027',
         paddingVertical: 15,
-        marginTop:30
+        marginTop:30,
+        borderRadius:25,
+      },
+    volver:{
+        borderRadius:25,
       },
 
 });
