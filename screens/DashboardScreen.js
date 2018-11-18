@@ -141,10 +141,10 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	buttonContainer2: {
-		backgroundColor: '#EA2027',
+		backgroundColor: '#AC0000',
 		padding: 10,
 		marginLeft:10,
-		borderRadius:15,	
+		borderRadius:15,
 	},
 	input:{
 			width: WIDTH-55,

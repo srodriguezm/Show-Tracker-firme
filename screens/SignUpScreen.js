@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     },
 
     buttonContainer: {
-        backgroundColor: '#EA2027',
+        backgroundColor: '#AC0000',
         paddingVertical: 15,
         marginTop:30,
         borderRadius:25,
