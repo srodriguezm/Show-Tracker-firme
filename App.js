@@ -13,9 +13,10 @@ import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
 import ForgotPasswordScreen from './screens/ForgotPasswordScreen'
-import DashboardScreen from './screens/DashboardScreen'
-import filtroRock from './screens/filtroRock'
-import filtroSalsa from './screens/filtroSalsa'
+import DashboardScreen from './screens/DashboardScreenCopy'
+import filtroRock from './screens/filtroRockCopy'
+import filtroSalsa from './screens/filtroSalsaCopy'
+import filtroMetal from './screens/filtroMetalCopy'
 import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
 
@@ -33,7 +34,8 @@ const AppStackNavigator = createStackNavigator({
   SignUp:SignUpScreen,
   Forgot:ForgotPasswordScreen,
   Rock:filtroRock,
-  Salsa:filtroSalsa
+  Salsa:filtroSalsa,
+  Metal:filtroMetal
 })
 
 const styles = StyleSheet.create({
