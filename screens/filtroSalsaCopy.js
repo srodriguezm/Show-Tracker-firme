@@ -40,7 +40,7 @@ const cards = [
 							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans, color:'white'}}>{"\n"}Dirección: Carrera 73b # 8-7</Text>
 							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans, color:'white'}}>{"\n"}Hora: {"\n"}4:30 PM </Text>
 							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans, color:'white'}}>{"\n"}Aforo:</Text>
-							 <Text style={{color:'green',fontFamily: Fonts.MerriweatherSans}}>Entradas disponibles</Text>
+							 <Text style={{color:'#78c195',fontFamily: Fonts.MerriweatherSans}}>Entradas disponibles</Text>
 						</>
 
 	}
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
 	bottomContainer2: {
 		padding: 0,
 		flexDirection: 'row',
-		backgroundColor: 'black'
+		backgroundColor: 'transparent'
 	},
 	buttonContainer2: {
 		backgroundColor: '#AC0000',

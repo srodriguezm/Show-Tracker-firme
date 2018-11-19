@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
 	bottomContainer2: {
 		padding: 0,
 		flexDirection: 'row',
-		backgroundColor: 'black'
+		backgroundColor: 'transparent'
 	},
 	buttonContainer2: {
 		backgroundColor: '#AC0000',
