@@ -10,11 +10,24 @@ import {
     TextInput,
     TouchableOpacity
 } from "react-native";
+
+import RadioForm, {
+    RadioButton, 
+    RadioButtonInput, 
+    RadioButtonLabel
+  } from 'react-native-simple-radio-button';
+
 import {Fonts} from '../src/util/Fonts';
 import wall from '../img/drum.jpg'
 import logo from '../img/logo.png'
 
 const {width:WIDTH}= Dimensions.get('window')
+
+var data=[
+    {label:"Músico   ", value: 0},
+    {label:"Usuario",value: 1},
+    {label:"Establecimiento",value:2}
+];
 class SignUpScreen extends Component {
 
     static navigationOptions={
@@ -49,6 +62,20 @@ class SignUpScreen extends Component {
                 secureTextEntry
                 style={styles.input}
                   />
+
+                   <Text style= {styles.buttonText1} >Yo soy: </Text>
+                <RadioForm style={styles.radio}
+                radio_props={data}
+                initial={1}
+                onPress={(value)=>{}}
+                buttonSize={30}
+                selectedButtonColor={'red'}
+                buttonColor={'red'}
+                labelStyle={{ fontSize:20, color:'white'}}
+                disable={false}
+                buttonWrapStyle={{marginLeft: 10}}
+                />
+
                 <TouchableOpacity activeOpacity={.5}>
 
             </TouchableOpacity>
@@ -99,6 +126,28 @@ const styles = StyleSheet.create({
         height:120,
         marginTop:60
     },
+    buttonText1:{
+        fontSize: 30,
+    textAlign: 'center',
+    color: 'white',
+    fontFamily: Fonts.FjallaOne,
+    opacity:0.9,
+    marginTop:30,
+    marginBottom:20
+
+    },
+    radio:{
+        width: WIDTH-55,
+        height:45,
+        borderRadius:25,
+        marginTop:30,
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        paddingTop:20, 
+        paddingLeft:30,
+       
+    },
+
     logoContainer:{
         alignItems:'center'
     },
@@ -137,7 +186,7 @@ const styles = StyleSheet.create({
     buttonContainer: {
         backgroundColor: '#AC0000',
         paddingVertical: 15,
-        marginTop:30,
+        marginTop:70,
         borderRadius:25,
       },
     volver:{

@@ -11,6 +11,7 @@ import {Card, SearchBar} from 'react-native-elements'
 import {Fonts} from '../src/util/Fonts';
 import Scroll from './Scroll';
 const {width:WIDTH}= Dimensions.get('window')
+
 class DashboardScreen extends Component{
 	static navigationOptions = {
       header: null

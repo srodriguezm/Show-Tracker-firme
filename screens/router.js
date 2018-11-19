@@ -1,11 +1,11 @@
 import React from 'react';
-import {TabNavigator} from 'react-navigation';
+import {TabNavigator, StackNavigator} from 'react-navigation';
 import {Icon} from 'react-native-elements';
 import {Fonts} from '../src/util/Fonts';
 import { Platform } from 'react-native';
-
 import ProfileScreen from './ProfileScreen';
 import DashboardScreen from './DashboardScreen';
+import HomeScreen from './HomeScreen';
 
 export const Tabs =TabNavigator({
   Profile:{
@@ -40,4 +40,16 @@ export const Tabs =TabNavigator({
         height: (Platform.OS === 'ios') ? 50 : 60 // I didn't use this in my app, so the numbers may be off.
       }
     },
-})
+});
+export const Root = StackNavigator({
+  Tabs:{
+    screen:Tabs,
+  } ,
+  Home:{
+    screen:HomeScreen,
+  }
+},
+{
+  mode: 'modal',
+  headerMode: 'none',
+});

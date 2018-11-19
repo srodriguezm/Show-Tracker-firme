@@ -62,7 +62,7 @@ class LoginScreen extends Component {
             </View>
           </View>
             <View style={styles.containera}>
-                <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} style={styles.volver} />
+                <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} style={styles.volver} color = '#7c92f3' />
             </View>
             </ImageBackground>
 
@@ -149,5 +149,6 @@ const styles = StyleSheet.create({
       },
       volver:{
         borderRadius:25,
+        backgroundColor: 'red',
       },
 });
