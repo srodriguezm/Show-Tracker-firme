@@ -168,9 +168,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 10,
-    backgroundColor: 'rgba(244,244,244,0.5)',
+    backgroundColor: 'rgba(244,244,244,0)',
     margin: 30,
-    color:'white',
     padding: 0
   },
   image: {

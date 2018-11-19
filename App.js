@@ -7,7 +7,7 @@
  * import DashboardScreen from './screens/DashboardScreen';
  */
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, ImageBackground, Button, TouchableOpacity} from 'react-native';
+import {Platform, StyleSheet, Text, View, ImageBackground, Button, TouchableOpacity, Dimensions} from 'react-native';
 import {TabNavigator,StackNavigator} from 'react-navigation';
 import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
@@ -21,6 +21,13 @@ import filtroSalsa from './screens/filtroSalsaCopy'
 import filtroMetal from './screens/filtroMetalCopy'
 import {Fonts} from './src/util/Fonts'
 import {Icon} from 'react-native-elements'
+
+var {
+  height
+} = Dimensions.get('window');
+var {
+  width
+} = Dimensions.get('window');
 export default class App extends Component {
 
   render() {
