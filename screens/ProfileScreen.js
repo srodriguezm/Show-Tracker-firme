@@ -3,9 +3,31 @@ import {Platform, StyleSheet, Text, View, ImageBackground, Button, TouchableOpac
 import {Fonts} from '../src/util/Fonts';
 import Scroll from './Scroll';
 import ProfileBar from './ProfileBar';
+import DateTimePicker from 'react-native-modal-datetime-picker';
 class ProfileScreen extends Component {
   static navigationOptions = {
       header: null
+  }
+  constructor(){
+    super()
+    this.state={
+      isVisible: false
+    }
+  }
+  handlePicker=()=>{
+    this.setState({
+      isVisible: false
+    })
+  }
+  showPicker=()=>{
+    this.setState({
+      isVisible: true
+    })
+  }
+  hidePicker=()=>{
+    this.setState({
+      isVisible: false
+    })
   }
     render() {
         return (
@@ -43,6 +65,19 @@ class ProfileScreen extends Component {
                 <TouchableOpacity style={styles.buttonContainerTransparent} onPress={()=> Linking.openURL('https://soundcloud.com/pezkoi')} >
                   <Image style={styles.musica} source={require('../img/soundCloud.png')}/>
                 </TouchableOpacity>
+              </View>
+            </View>
+            <View style={styles.bottomContainer}>
+                <TouchableOpacity style={styles.buttonContainer} onPress={this.showPicker}>
+                  <Text style={styles.buttonText}> Mis Conciertos </Text>
+                </TouchableOpacity>
+              <View>
+                <DateTimePicker
+                  isVisible={this.state.isVisible}
+                  onConfirm={this.handlePicker}
+                  onCancel={this.hidePicker}
+                  mode={'datetime'}
+                  />
               </View>
             </View>
             <View style={styles.bottomContainer}>
