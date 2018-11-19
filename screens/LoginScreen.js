@@ -47,7 +47,7 @@ class LoginScreen extends Component {
                 style={styles.input}
                   />
 
-                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Dashboard')}>
+                  <TouchableOpacity style = {styles.buttonContainer} onPress={()=>this.props.navigation.navigate('Flip')}>
                 <Text style= {styles.buttonText} >LOGIN</Text>
                  </TouchableOpacity>
             </View>
