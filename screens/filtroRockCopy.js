@@ -15,15 +15,15 @@ const cards = [
 		date:"Jueves 22/11/2018",
 		title: "Concierto de rock en Rock the night 80´s",
 		picture: require('./images/RTN80.jpg'),
-		content: <><Text>{"\n"}Artista: Baklash{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Vamos a romperla este jueves recordando temas del gran Lemmy Kilmister y su legendaria agrupación Mötorhead. A casi tres años de su muerte, vamos a gritar en honor a él</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Baklash{"\n"}</Text>
+							 <Text style={{textAlign:'justify' ,fontFamily: Fonts.MerriweatherSans}}>Vamos a romperla este jueves recordando temas del gran Lemmy Kilmister y su legendaria agrupación Mötorhead. A casi tres años de su muerte, vamos a gritar en honor a él</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/rtn80s.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 6 # 71d-77 sur</Text>
-							 <Text>{"\n"}Hora: {"\n"}8:00 PM - Primeras bandas {"\n"}9:30 PM - Salida al escenario </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'orange'}}>Quedan pocas boletas</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 6 # 71d-77 sur</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}8:00 PM - Primeras bandas {"\n"}9:30 PM - Salida al escenario </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'orange',fontFamily: Fonts.MerriweatherSans}}>Quedan pocas boletas</Text>
 						</>
 	},
 	{
@@ -31,15 +31,15 @@ const cards = [
 		date:"Viernes 23/11/2018",
 		title: "Concierto de rock en Hard rock",
 		picture: require('../img/sfx38079.jpg'),
-		content: <><Text>{"\n"}Artista: Black Horses{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Hard Rock's festival of independent artists features Black Horses: {"\n"}Nacidos en el norte de Bogotá, tendremos nuestro primer gran toque en Hard Rock</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}> {"\n"}Artista: Black Horses{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Hard Rock's festival of independent artists features Black Horses: {"\n"}Nacidos en el norte de Bogotá, tendremos nuestro primer gran toque en Hard Rock</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/hardrock.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 81 # 13-05</Text>
-							 <Text>{"\n"}Hora: {"\n"}6:00 PM - Primeras bandas {"\n"}7:00 PM - Salida al escenario </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'blue'}}>Entrada libre hasta llenar cupo</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 81 # 13-05</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}6:00 PM - Primeras bandas {"\n"}7:00 PM - Salida al escenario </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'blue',fontFamily: Fonts.MerriweatherSans}}>Entrada libre hasta llenar cupo</Text>
 						</>
 
 	},
@@ -48,15 +48,15 @@ const cards = [
 		date:"Sábado 24/11/2018",
 		title: "Lanzamiento de disco en La Roma Records",
 		picture: require('../img/concert.jpg'),
-		content: <><Text>{"\n"}Artista: Vettel{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>¡Llegó nuestra hora! Por fin lanzamos nuestro primer disco como banda y queremos compartir esta noche con ustedes para celebrar</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Vettel{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>¡Llegó nuestra hora! Por fin lanzamos nuestro primer disco como banda y queremos compartir esta noche con ustedes para celebrar</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/concert.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Transversal 17A Bis #36-21</Text>
-							 <Text>{"\n"}Hora: {"\n"}4:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'red'}}>Agotado</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Transversal 17A Bis #36-21</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}4:00 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'red',fontFamily: Fonts.MerriweatherSans}}>Agotado</Text>
 						</>
 
 
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
 		alignItems:'center',
 		flexGrow: 1,
 		justifyContent: 'center',
-		backgroundColor: "#6b139c"
+		backgroundColor: "transparent"
 	},
 	cards: {
 		width: '100px',
@@ -166,5 +166,6 @@ const styles = StyleSheet.create({
 			fontSize: 24,
 			textAlign: 'center',
 
+			fontFamily: Fonts.FjallaOne,
 	}
 });

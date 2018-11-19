@@ -10,11 +10,14 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { ItemCard } from './ItemCard';
+import {Fonts} from '../src/util/Fonts';
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    
   }
 });
 export class CardList extends React.Component {
@@ -145,7 +148,7 @@ export class CardList extends React.Component {
               ref={c => this._flatList = c}
               style={[{
                 flex: 1,
-                backgroundColor: 'white'
+                backgroundColor: 'rgba(222,220,220,0.1)'
               }, this.props.listStyle]}
               data={this.props.cards}
               scrollEnabled={true}

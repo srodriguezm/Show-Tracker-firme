@@ -19,15 +19,15 @@ const cards = [
 		date:"Jueves 22/11/2018",
 		title: "Concierto de rock en Rock the night 80´s",
 		picture: require('./images/RTN80.jpg'),
-		content: <><Text>{"\n"}Artista: Baklash{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Vamos a romperla este jueves recordando temas del gran Lemmy Kilmister y su legendaria agrupación Mötorhead. A casi tres años de su muerte, vamos a gritar en honor a él</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Baklash{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Vamos a romperla este jueves recordando temas del gran Lemmy Kilmister y su legendaria agrupación Mötorhead. A casi tres años de su muerte, vamos a gritar en honor a él</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/rtn80s.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 6 # 71d-77 sur</Text>
-							 <Text>{"\n"}Hora: {"\n"}8:00 PM - Primeras bandas {"\n"}9:30 PM - Salida al escenario </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'orange'}}>Quedan pocas boletas</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 6 # 71d-77 sur</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}8:00 PM - Primeras bandas {"\n"}9:30 PM - Salida al escenario </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'orange', fontFamily: Fonts.MerriweatherSans}}>Quedan pocas boletas</Text>
 						</>
 	},
 	{
@@ -35,15 +35,15 @@ const cards = [
 		date:"Viernes 23/11/2018",
 		title: "Concierto de rock en Hard rock",
 		picture: require('../img/sfx38079.jpg'),
-		content: <><Text>{"\n"}Artista: Black Horses{"\n"}</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Black Horses{"\n"}</Text>
 							 <Text style={{textAlign:'justify'}}>Hard Rock's festival of independent artists features Black Horses: {"\n"}Nacidos en el norte de Bogotá, tendremos nuestro primer gran toque en Hard Rock</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/hardrock.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 81 # 13-05</Text>
-							 <Text>{"\n"}Hora: {"\n"}6:00 PM - Primeras bandas {"\n"}7:00 PM - Salida al escenario </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'blue'}}>Entrada libre hasta llenar cupo</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 81 # 13-05</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}} >{"\n"}Hora: {"\n"}6:00 PM - Primeras bandas {"\n"}7:00 PM - Salida al escenario </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'blue', fontFamily: Fonts.MerriweatherSans}}>Entrada libre hasta llenar cupo</Text>
 						</>
 
 	},
@@ -52,15 +52,15 @@ const cards = [
 		date:"Sábado 24/11/2018",
 		title: "Lanzamiento de disco en La Roma Records",
 		picture: require('../img/concert.jpg'),
-		content: <><Text>{"\n"}Artista: Vettel{"\n"}</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Vettel{"\n"}</Text>
 							 <Text style={{textAlign:'justify'}}>¡Llegó nuestra hora! Por fin lanzamos nuestro primer disco como banda y queremos compartir esta noche con ustedes para celebrar</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/laroma.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Transversal 17A Bis #36-21</Text>
-							 <Text>{"\n"}Hora: {"\n"}4:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'red'}}>Agotado</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Transversal 17A Bis #36-21</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}4:00 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'red',fontFamily: Fonts.MerriweatherSans}}>Agotado</Text>
 						</>
 
 
@@ -70,15 +70,15 @@ const cards = [
 		date:"Sábado 24/11/2018",
 		title: "Toque de metal en Rock the night 80´s",
 		picture: require('./images/RTN80.jpg'),
-		content:<><Text>{"\n"}Artista: Ekthelion{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Llegamos a este bar luego de dos meses de inactividad. Pero no piensen que los olvidamos. Mejor vengan a sacudir la cabeza con nosotros como antes</Text>
+		content:<><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Ekthelion{"\n"}</Text>
+							 <Text style={{textAlign:'justify', fontFamily: Fonts.MerriweatherSans,}}>Llegamos a este bar luego de dos meses de inactividad. Pero no piensen que los olvidamos. Mejor vengan a sacudir la cabeza con nosotros como antes</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{fontFamily: Fonts.MerriweatherSans,}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/rtn80s.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 6# 71d-77 sur</Text>
-							 <Text>{"\n"}Hora: {"\n"}8:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'green'}}>Boletas disponibles</Text>
+							 <Text style={{textAlign:'justify', fontFamily: Fonts.MerriweatherSans,}}>{"\n"}Dirección: Calle 6# 71d-77 sur</Text>
+							 <Text style={{textAlign:'justify', fontFamily: Fonts.MerriweatherSans,}}>{"\n"}Hora: {"\n"}8:00 PM </Text>
+							 <Text style={{textAlign:'justify', fontFamily: Fonts.MerriweatherSans,}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'green', fontFamily: Fonts.MerriweatherSans}}>Boletas disponibles</Text>
 						</>
 
 
@@ -88,15 +88,15 @@ const cards = [
 		date:"Domingo 2/12/2018",
 		title: "Salsaton en La aldea",
 		picture: require('../img/laldea.jpg'),
-		content: <><Text>{"\n"}Artista: Orquesta juvenil puntapié{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>¡Hola salseros! Nosotros somos la orquesta puntapié y queremos invitarlos a romper las baldosas de la Aldea en este festival que organizamos con mucho amor</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Orquesta juvenil puntapié{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>¡Hola salseros! Nosotros somos la orquesta puntapié y queremos invitarlos a romper las baldosas de la Aldea en este festival que organizamos con mucho amor</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/laaldea.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 17 # 2-77</Text>
-							 <Text>{"\n"}Hora: {"\n"}11 AM - 8 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'orange'}}>Quedan pocas boletas</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 17 # 2-77</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}11 AM - 8 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'orange',fontFamily: Fonts.MerriweatherSans}}>Quedan pocas boletas</Text>
 						</>
 
 	},
@@ -105,15 +105,15 @@ const cards = [
 		date:"Viernes 7/12/2018",
 		title: "Rumba latina en Amareto Salsa y Guaguancó",
 		picture: require('../img/salsab.jpg'),
-		content: <><Text>{"\n"}Artista: Los candelabros{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>A ti, que te gusta bailar salsa, te abrimos este espacio para que nos conozcas y disfrutes de nuestra herencia latina. Ven y baila un buen rato al ritmo de nuestras trompetas</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Los candelabros{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>A ti, que te gusta bailar salsa, te abrimos este espacio para que nos conozcas y disfrutes de nuestra herencia latina. Ven y baila un buen rato al ritmo de nuestras trompetas</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/amareto.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Carrera 73b # 8-7</Text>
-							 <Text>{"\n"}Hora: {"\n"}4:30 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'green'}}>Entradas disponibles</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Carrera 73b # 8-7</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}4:30 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'green',fontFamily: Fonts.MerriweatherSans}}>Entradas disponibles</Text>
 						</>
 
 	},
@@ -122,15 +122,15 @@ const cards = [
 		date:"Sábado 8/12/2018",
 		title: "Concierto de metal en Casa Valhalla",
 		picture: require('../img/metalval.jpg'),
-		content:<><Text>{"\n"}Artista: Tauros{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Empecemos Diciembre con la mejor onda de metal progresivo. Conozcan nuestros nuevos sencillos en vivo y pasémosla bien con buena música</Text>
+		content:<><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Tauros{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Empecemos Diciembre con la mejor onda de metal progresivo. Conozcan nuestros nuevos sencillos en vivo y pasémosla bien con buena música</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/casavalhalla.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Carrera 22 # 74-31</Text>
-							 <Text>{"\n"}Hora: {"\n"}10:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'blue'}}>Entrada libre hasta llenar cupo</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Carrera 22 # 74-31</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}10:00 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'blue',fontFamily: Fonts.MerriweatherSans}}>Entrada libre hasta llenar cupo</Text>
 						</>
 
 
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
 		alignItems:'center',
 		flexGrow: 1,
 		justifyContent: 'center',
-		backgroundColor: "#6b139c"
+		backgroundColor: "transparent"
 	},
 	cards: {
 		width: '100px',
@@ -227,7 +227,7 @@ const styles = StyleSheet.create({
 	bottomContainer2: {
 		padding: 0,
 		flexDirection: 'row',
-		backgroundColor: 'black'
+		backgroundColor: 'transparent'
 	},
 	buttonContainer2: {
 		backgroundColor: '#AC0000',
@@ -248,6 +248,8 @@ const styles = StyleSheet.create({
 			color: 'white',
 			fontSize: 24,
 			textAlign: 'center',
+
+			fontFamily: Fonts.FjallaOne,
 
 	}
 });

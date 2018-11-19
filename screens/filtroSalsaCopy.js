@@ -15,15 +15,15 @@ const cards = [
 		date:"Domingo 2/12/2018",
 		title: "Salsaton en La aldea",
 		picture: require('../img/laldea.jpg'),
-		content: <><Text>{"\n"}Artista: Orquesta juvenil puntapié{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>¡Hola salseros! Nosotros somos la orquesta puntapié y queremos invitarlos a romper las baldosas de la Aldea en este festival que organizamos con mucho amor</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Orquesta juvenil puntapié{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>¡Hola salseros! Nosotros somos la orquesta puntapié y queremos invitarlos a romper las baldosas de la Aldea en este festival que organizamos con mucho amor</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/laaldea.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 17 # 2-77</Text>
-							 <Text>{"\n"}Hora: {"\n"}11 AM - 8 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'orange'}}>Quedan pocas boletas</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 17 # 2-77</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}11 AM - 8 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'orange',fontFamily: Fonts.MerriweatherSans}}>Quedan pocas boletas</Text>
 						</>
 
 	},
@@ -32,15 +32,15 @@ const cards = [
 		date:"Viernes 7/12/2018",
 		title: "Rumba latina en Amareto Salsa y Guaguancó",
 		picture: require('../img/salsab.jpg'),
-		content: <><Text>{"\n"}Artista: Los candelabros{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>A ti, que te gusta bailar salsa, te abrimos este espacio para que nos conozcas y disfrutes de nuestra herencia latina. Ven y baila un buen rato al ritmo de nuestras trompetas</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Los candelabros{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>A ti, que te gusta bailar salsa, te abrimos este espacio para que nos conozcas y disfrutes de nuestra herencia latina. Ven y baila un buen rato al ritmo de nuestras trompetas</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/laaldea.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Carrera 73b # 8-7</Text>
-							 <Text>{"\n"}Hora: {"\n"}4:30 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'green'}}>Entradas disponibles</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Carrera 73b # 8-7</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}4:30 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'green',fontFamily: Fonts.MerriweatherSans}}>Entradas disponibles</Text>
 						</>
 
 	}
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
 		alignItems:'center',
 		flexGrow: 1,
 		justifyContent: 'center',
-		backgroundColor: "#6b139c"
+		backgroundColor: "transparent"
 	},
 	cards: {
 		width: '100px',
@@ -149,5 +149,6 @@ const styles = StyleSheet.create({
 			fontSize: 24,
 			textAlign: 'center',
 
+			fontFamily: Fonts.FjallaOne,
 	}
 });

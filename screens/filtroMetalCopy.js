@@ -15,15 +15,15 @@ const cards = [
 		date:"Sábado 24/11/2018",
 		title: "Toque de metal en Rock the night 80´s",
 		picture: require('./images/RTN80.jpg'),
-		content:<><Text>{"\n"}Artista: Ekthelion{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Llegamos a este bar luego de dos meses de inactividad. Pero no piensen que los olvidamos. Mejor vengan a sacudir la cabeza con nosotros como antes</Text>
+		content:<><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Ekthelion{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Llegamos a este bar luego de dos meses de inactividad. Pero no piensen que los olvidamos. Mejor vengan a sacudir la cabeza con nosotros como antes</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/rtn80s.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Calle 6# 71d-77 sur</Text>
-							 <Text>{"\n"}Hora: {"\n"}8:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'green'}}>Boletas disponibles</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Calle 6# 71d-77 sur</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}8:00 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'green',fontFamily: Fonts.MerriweatherSans}}>Boletas disponibles</Text>
 						</>
 
 
@@ -33,15 +33,15 @@ const cards = [
 		date:"Sábado 8/12/2018",
 		title: "Concierto de metal en Casa Valhalla",
 		picture: require('../img/metalval.jpg'),
-		content:<><Text>{"\n"}Artista: Tauros{"\n"}</Text>
-							 <Text style={{textAlign:'justify'}}>Empecemos Diciembre con la mejor onda de metal progresivo. Conozcan nuestros nuevos sencillos en vivo y pasémosla bien con buena música</Text>
+		content:<><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Tauros{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Empecemos Diciembre con la mejor onda de metal progresivo. Conozcan nuestros nuevos sencillos en vivo y pasémosla bien con buena música</Text>
 
-							 <Text>{"\n"}¿Cómo llegar?{"\n"}</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
 							 <Image source = {require('../img/casavalhalla.jpg')} style={{width:260, height: 260}} />
-							 <Text>{"\n"}Dirección: Carrera 22 # 74-31</Text>
-							 <Text>{"\n"}Hora: {"\n"}10:00 PM </Text>
-							 <Text>{"\n"}Aforo:</Text>
-							 <Text style={{color:'blue'}}>Entrada libre hasta llenar cupo</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Dirección: Carrera 22 # 74-31</Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Hora: {"\n"}10:00 PM </Text>
+							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Aforo:</Text>
+							 <Text style={{color:'blue',fontFamily: Fonts.MerriweatherSans}}>Entrada libre hasta llenar cupo</Text>
 						</>
 
 
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
 		alignItems:'center',
 		flexGrow: 1,
 		justifyContent: 'center',
-		backgroundColor: "#6b139c"
+		backgroundColor: "transparent"
 	},
 	cards: {
 		width: '100px',
@@ -151,5 +151,6 @@ const styles = StyleSheet.create({
 			fontSize: 24,
 			textAlign: 'center',
 
+			fontFamily: Fonts.FjallaOne,
 	}
 });

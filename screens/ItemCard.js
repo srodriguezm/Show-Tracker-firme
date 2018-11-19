@@ -9,6 +9,8 @@ import {
   TouchableWithoutFeedback,
   Image
 } from 'react-native';
+import {Fonts} from '../src/util/Fonts';
+
 import PropTypes from 'prop-types';
 
 export class ItemCard extends React.Component {
@@ -107,7 +109,7 @@ export class ItemCard extends React.Component {
         }}
       />
         <View style = {{
-          backgroundColor: '#C0E3A3'
+          backgroundColor: 'rgba(172,0,0,0.5)'
         }}>
             <Text style = {styles.fechas}>{this.props.date}</Text>
         </View>
@@ -166,7 +168,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 10,
-    backgroundColor: 'rgb(240, 240, 240)',
+    backgroundColor: 'rgba(244,244,244,0.5)',
     margin: 30,
     padding: 0
   },
@@ -180,24 +182,31 @@ const styles = StyleSheet.create({
   },
   text: {
     backgroundColor: 'transparent',
-    color: 'black',
+    color: 'white',
+    paddingBottom: 10,
+
     fontWeight: '200',
-    fontSize: 14,
-    textAlign:'center'
+    fontSize: 16,
+    textAlign:'center',
+    fontFamily: Fonts.FjallaOne,
   },
   close: {
     color:'white',
-    backgroundColor:'red',
+    backgroundColor:'rgba(172,0,0,0.9)',
     width:290,
     height:24,
     textAlign:'center',
-    borderRadius:6
+    borderRadius:6,
+
+    fontFamily: Fonts.MerriweatherSans,
   },
   fechas:{
     padding:10,
     fontSize:14,
     textAlign:'center',
-    color: 'black'
+    color: 'white',
+
+    fontFamily: Fonts.MerriweatherSans,
   }
 
 });
