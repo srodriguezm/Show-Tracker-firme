@@ -13,9 +13,10 @@ import HomeScreen from './screens/HomeScreen'
 import LoginScreen from './screens/LoginScreen'
 import SignUpScreen from './screens/SignUpScreen'
 import ForgotPasswordScreen from './screens/ForgotPasswordScreen'
-import DashboardScreen from './screens/DashboardScreen'
+import ProfileScreen from './screens/ProfileScreen'
 import filtroRock from './screens/filtroRock'
 import filtroSalsa from './screens/filtroSalsa'
+import FlipBoardScreen from './screens/FlipBoardScreen'
 import {Fonts} from './src/util/Fonts';
 export default class App extends Component {
 
@@ -29,11 +30,11 @@ export default class App extends Component {
 const AppStackNavigator = createStackNavigator({
   Home:HomeScreen,
   Login:LoginScreen,
-  Dashboard:DashboardScreen,
   SignUp:SignUpScreen,
   Forgot:ForgotPasswordScreen,
   Rock:filtroRock,
-  Salsa:filtroSalsa
+  Salsa:filtroSalsa,
+  Flip: FlipBoardScreen,
 })
 
 const styles = StyleSheet.create({
