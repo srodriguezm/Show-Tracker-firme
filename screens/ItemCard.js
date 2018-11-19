@@ -170,6 +170,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: 'rgba(244,244,244,0.5)',
     margin: 30,
+    color:'white',
     padding: 0
   },
   image: {
@@ -184,7 +185,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     color: 'white',
     paddingBottom: 10,
-
     fontWeight: '200',
     fontSize: 16,
     textAlign:'center',
@@ -197,7 +197,6 @@ const styles = StyleSheet.create({
     height:24,
     textAlign:'center',
     borderRadius:6,
-
     fontFamily: Fonts.MerriweatherSans,
   },
   fechas:{

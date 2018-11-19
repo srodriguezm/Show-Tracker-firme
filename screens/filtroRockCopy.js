@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'white',
-    fontFamily: Fonts.MerriweatherSans,
+	fontFamily: Fonts.MerriweatherSans,
   },
 	imgJazz:{
 		width: 280,
@@ -138,12 +138,12 @@ const styles = StyleSheet.create({
 	texto: {
     fontSize: 15,
     textAlign: 'center',
-    fontFamily: Fonts.MerriweatherSans,
+    fontFamily: Fonts.MerriweatherSans
   },
 	bottomContainer2: {
 		padding: 0,
 		flexDirection: 'row',
-		backgroundColor: 'black'
+		backgroundColor: 'white'
 	},
 	buttonContainer2: {
 		backgroundColor: '#AC0000',

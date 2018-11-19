@@ -19,7 +19,7 @@ const cards = [
 		date:"Jueves 22/11/2018",
 		title: "Concierto de rock en Rock the night 80´s",
 		picture: require('./images/RTN80.jpg'),
-		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans}}>{"\n"}Artista: Baklash{"\n"}</Text>
+		content: <><Text style={{textAlign:'justify', fontWeight: 'bold',fontFamily: Fonts.MerriweatherSans,}}>{"\n"}Artista: Baklash{"\n"}</Text>
 							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>Vamos a romperla este jueves recordando temas del gran Lemmy Kilmister y su legendaria agrupación Mötorhead. A casi tres años de su muerte, vamos a gritar en honor a él</Text>
 
 							 <Text style={{textAlign:'justify',fontFamily: Fonts.MerriweatherSans}}>{"\n"}¿Cómo llegar?{"\n"}</Text>
