@@ -61,6 +61,9 @@ class LoginScreen extends Component {
               </TouchableOpacity>
             </View>
           </View>
+          <View>
+                  <Text style={styles.signupLinkText} onPress={()=>this.props.navigation.navigate('Dashboard')}>Quiero ver los eventos!</Text>
+                </View>
             <View style={styles.containera}>
                 <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} style={styles.volver} color = '#7c92f3' />
             </View>
