@@ -15,9 +15,11 @@ import SignUpScreen from './screens/SignUpScreen'
 import ForgotPasswordScreen from './screens/ForgotPasswordScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import FlipBoardScreen from './screens/FlipBoardScreen'
+import FlipEstablecimiento from './screens/FlipEstablecimiento'
 import DashboardScreen from './screens/DashboardScreenCopy'
 import filtroRock from './screens/filtroRockCopy'
 import filtroSalsa from './screens/filtroSalsaCopy'
+import EstablecimientoScreen from './screens/EstablecimientoScreen'
 import filtroMetal from './screens/filtroMetalCopy'
 import {Fonts} from './src/util/Fonts'
 import {Icon} from 'react-native-elements'
@@ -81,6 +83,7 @@ export const AppStackNavigator = StackNavigator({
   Metal:{screen:filtroMetal},
   Dashboard:{screen:DashboardScreen},
   Tabs:{screen:Tabs},
+  Establecimiento:{screen:EstablecimientoScreen}
 },
 {
   mode: 'modal',
@@ -97,6 +100,8 @@ export const AppStackNavigator = StackNavigator({
     Login:{screen:LoginScreen},
     SignUp:{screen:SignUpScreen},
     Forgot:{screen:ForgotPasswordScreen},
+    Establecimiento:{screen:EstablecimientoScreen}
+
   },
   {
     mode: 'modal',
