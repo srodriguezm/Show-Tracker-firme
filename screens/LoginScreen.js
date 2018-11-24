@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import {Icon} from 'react-native-elements';
 import {Fonts} from '../src/util/Fonts';
+import Scroll from './Scroll';
 
 
 import wall from '../img/drum.jpg'
@@ -56,7 +57,7 @@ class LoginScreen extends Component {
         return (
 
             <ImageBackground source={wall} style={styles.backgroundContainer} >
-           
+            <Scroll>
               
 
 
@@ -115,6 +116,7 @@ class LoginScreen extends Component {
             <View style={styles.containera}>
                 <Button title="Volver a inicio" onPress={() => this.props.navigation.goBack()} style={styles.volver} color = '#7c92f3' />
             </View>
+            </Scroll>
             </ImageBackground>
         );
     }
@@ -126,7 +128,8 @@ const styles = StyleSheet.create({
     containera: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: 20,
     },
     backgroundContainer: {
         flex: 1,
@@ -141,6 +144,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
+        marginTop:20,
       },
       accountText: {
         color: "#D8D8D8",
@@ -151,6 +155,8 @@ const styles = StyleSheet.create({
         marginLeft: 5,
         fontSize:18,
         fontFamily: Fonts.MerriweatherSans,
+        textAlign: 'center',
+        marginTop:10,
       },
     logo:{
         width:120,
@@ -164,7 +170,7 @@ const styles = StyleSheet.create({
         color:'white',
         fontSize:45,
         fontFamily: Fonts.FjallaOne,
-        marginTop:50
+        marginTop:40
     },
     forgotPasswordText: {
         color: "#ffffff",
